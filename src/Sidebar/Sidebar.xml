@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="Sidebar.widget.Sidebar" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>Sidebar</name>
+  <description>The description of this widget.</description>
+
+  <icon></icon>
+
+  <properties>
+        <property key="cssClass" type="string" required="true" defaultValue="glyphicon glyphicon-menu-hamburger">
+            <caption>CSS Class</caption>
+            <category>Appearance</category>
+            <description>CSS Classes to apply to the toggle, typically a glyphicon.</description>
+        </property>
+        <property key="layoutClass" type="string" required="true" defaultValue=".mx-layoutcontainer-left.app-sidebar">
+            <caption>Layout Class</caption>
+            <category>Appearance</category>
+            <description>Targeted area to apply animation to; use css notation (like .class-name).</description>
+        </property>
+	</properties>
+</widget>
+
