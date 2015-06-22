@@ -6,7 +6,7 @@
     ========================
 
     @file      : Sidebar.js
-    @version   : 0.1
+    @version   : 0.2
     @author    : Chad Evans
     @date      : 03 Jun 2015
     @copyright : 2015 Mendix B.V.
@@ -22,14 +22,14 @@ define([
     'dojo/_base/declare', 'mxui/widget/_WidgetBase', 'dijit/_TemplatedMixin',
     'mxui/dom', 'dojo/dom', 'dojo/query', 'dojo/dom-class',
     'dojo/dom-construct', 'dojo/_base/array', 'dojo/_base/lang', 'dojo/text', 'dojo/html', 'dojo/_base/event',
-    'Sidebar/lib/jquery-1.11.2.min', 'dojo/text!Sidebar/widget/template/Sidebar.html'
+    'Sidebar/lib/jquery-1.11.2', 'dojo/text!Sidebar/widget/template/Sidebar.html'
 ], function (declare, _WidgetBase, _TemplatedMixin,
     dom, dojoDom, domQuery, domClass,
     domConstruct, dojoArray, lang, text, html, event,
     _jQuery, widgetTemplate) {
     'use strict';
 
-    var $ = jQuery.noConflict(true);
+    var $ = _jQuery.noConflict(true);
 
     // Declare widget's prototype.
     return declare('Sidebar.widget.Sidebar', [_WidgetBase, _TemplatedMixin], {
